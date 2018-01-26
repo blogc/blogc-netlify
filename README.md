@@ -1,2 +1,5 @@
-# blogc-example
-An example repository that can be used as base for a blogc website.
+# blogc-netlify
+
+blogc template for Netlify.
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/blogc/blogc-netlify)

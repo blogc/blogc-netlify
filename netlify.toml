@@ -1,0 +1,6 @@
+[build]
+publish = "_build"
+command = "bash netlify.sh"
+
+[template.environment]
+BLOGC_VERSION = "Set BLOGC_VERSION here. If not set, latest release will be used"
