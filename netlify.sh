@@ -12,11 +12,7 @@ set -ex
 
 I() {
     if [[ -z "${BLOGC_VERSION}" ]]; then
-        BLOGC_VERSION=$(
-            wget -qO- "https://api.github.com/repos/blogc/blogc/releases/latest" | \
-                grep '"tag_name":' | \
-                sed -E 's/.*"v([^"]+)".*/\1/'
-        )
+        BLOGC_VERSION=$(wget -qO- https://blogc.rgm.io/ | grep '^LATEST_RELEASE=' | cut -d= -f2)
     fi
 
     local P="blogc-static-amd64-${BLOGC_VERSION}"
